@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>LifeSpot</title>
+    <link href="../Static/CSS/index.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../Static/JS/about.js"></script>
+    <script type="text/javascript" src="../Static/JS/simple-adaptive-slider.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // инициализация слайдера
+            var slider = new SimpleAdaptiveSlider('.slider', {
+                loop: true,
+                autoplay: false,
+                interval: 5000,
+                swipe: true,
+            });
+        });
+    </script>
+
+</head>
+
+<header id="header-index">
+    <h1>LifeSpot - о проекте</h1>
+    <p>На сайте собраны прямые трансляции из улиц разных городов мира.</p>
+    <p>Все трансляции находятся в открытых источниках, в данный момент - youtube.com. </p>
+    <p>Отзыв о работе сайта можно оставить здесь</p>
+</header>
+
+<!--SIDEBAR-->
+<body>
+    <div class="slider">
+        <div class="slider__wrapper">
+            <div class="slider__items">
+                <div class="slider__item">
+                    <img class="img-fluid" src="https://cdn2.tu-tu.ru/image/pagetree_node_data/1/6933bc9a3c43b4d8ccddcd005fc1102c/" alt="..." width="800" height="400" loading="lazy">
+                </div>
+                <div class="slider__item">
+                    <img class="img-fluid" src="https://34travel.me/media/posts/5dee526b56c61-4.jpg" alt="..." width="800" height="400" loading="lazy">
+                </div>
+                <div class="slider__item">
+                    <img class="img-fluid" src="https://horosho-tam.ru/thumb/1600/pics/94/ad/5a788455f92daa71166dad94/manhattan-skyline-panorama-nyu-yorka.jpg" alt="..." width="800" height="400" loading="lazy">
+                </div>
+            </div>
+        </div>
+        <a class="slider__control slider__control_prev" href="#" role="button" data-slide="prev"></a>
+        <a class="slider__control slider__control_next" href="#" role="button" data-slide="next"></a>
+    </div>
+    <div class="reviews">
+        <div class="review-button">
+            <button onclick="addComment()">Оставить отзыв</button>
+        </div>
+    </div>
+ 
+</body>
+<!--FOOTER-->
+
+</html>
+
